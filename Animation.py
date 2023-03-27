@@ -6,8 +6,9 @@ window.config(background="white")
 window.geometry("500x500")
 window.resizable(0, 0)
 window.title("Animation")
-window.iconbitmap("C:\\Users\\umair\\Downloads\\calculator_jNH_icon.ico")
-file = "C:/Users/umair/Downloads/yy3.gif"
+window.iconbitmap("icon.ico")
+
+file = "yy3.gif"
 info = Image.open(file)
 frames = info.n_frames
 im = [PhotoImage(file=file, format=f"gif -index {i}") for i in range(frames)]
